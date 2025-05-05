@@ -163,7 +163,7 @@ class LoginController extends Controller
                 $room->available_rooms = max($total_rooms - $booked_rooms, 0);
                 return $room;
             })->filter(function ($room) {
-                return $room->available_rooms > 0; // Keep only available rooms
+                return $room->available_rooms > 0; 
             });
         
             return view('availability_results', compact('rooms', 'start_date', 'end_date'));
