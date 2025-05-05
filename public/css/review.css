@@ -1,0 +1,142 @@
+.review-system-body {
+    font-family: Arial, sans-serif;
+    background-color: #F4F4F4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.review-system h3 {
+    font-size: 24px;
+    color: #1E3A5F;
+    margin-bottom: 10px;
+}
+
+.review-form {
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.review-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: vertical;
+    min-height: 120px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.review-form textarea:focus {
+    border-color: #FFD700;
+    outline: none;
+}
+
+.review-form input[type="number"] {
+    width: 60px; /* Adjusted width for consistency */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: border-color 0.3s ease;
+}
+
+.review-form input[type="number"]:focus {
+    border-color: #FFD700;
+    outline: none;
+}
+
+.review-form button {
+    background-color: #FFD700;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.review-form button:hover {
+    background-color: #1E3A5F;
+    transform: scale(1.05);
+}
+
+.review-container {
+    background-color: #FFF;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.review-container p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.review-container .review-author {
+    font-weight: bold;
+    color: #1E3A5F;
+}
+
+.review-container .review-rating {
+    color: #FFD700;
+    font-size: 18px;
+}
+
+.delete-review-btn {
+    background-color: #FF4D4D;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.delete-review-btn:hover {
+    background-color: #e60000;
+}
+
+.rating-stars {
+    display: inline-block;
+    text-align: center;
+}
+
+.rating-stars input {
+    display: none;
+}
+
+.rating-stars label {
+    font-size: 25px;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin-right: 5px; 
+}
+
+.rating-stars input:checked ~ label {
+    color: #FFD700;
+}
+
+.rating-stars input:checked ~ label:hover,
+.rating-stars input:checked ~ label:hover ~ label {
+    color: #FFD700;
+}
+
+.rating-stars label:hover,
+.rating-stars label:hover ~ label {
+    color: #FFD700;
+}
+
+.rating-stars label:hover ~ label {
+    color: #FFD700;
+}
