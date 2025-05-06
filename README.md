@@ -1,11 +1,5 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-<p align="center">
-<a href="#"><img src="https://img.shields.io/badge/status-in%20development-orange" alt="Status"></a>
-<a href="#"><img src="https://img.shields.io/badge/python-recommendation-blue" alt="Python"></a>
-<a href="#"><img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License"></a>
-</p>
-
 ## About the Project
 
 This is a **Hotel Reservation System** developed as an academic project using **Laravel (PHP framework)**, **MySQL**, and **Python**. It offers a user-friendly interface for customers to:
@@ -39,3 +33,31 @@ Python integration is done using a standalone script located in the Laravel `sto
 ```bash
 git clone https://github.com/your-username/hotel-reservation-system.git
 cd hotel-reservation-system
+
+### 2. Install Composer Dependencies
+
+Make sure you have [Composer](https://getcomposer.org/) installed. Then run:
+
+```bash
+composer install
+### 3. Set Up Environment File
+
+Copy the example environment file and generate an application key:
+
+```bash
+cp .env.example .env
+php artisan key:generate
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=your_database_name
+DB_USERNAME=your_database_user
+DB_PASSWORD=your_database_password
+
+### 4. Run Migrations
+
+```bash
+php artisan migrate
+### 5. Start the Laravel Development Server
+```bash
+php artisan serve
