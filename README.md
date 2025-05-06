@@ -27,19 +27,21 @@ Python integration is done using a standalone script located in the Laravel `sto
 ---
 
 ## 🔧 Installation Guide
+Be sure to install xampp in your syatem before starting 
 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/hotel-reservation-system.git
-cd hotel-reservation-system
-
+git clone https://github.com/BisheshSubba/StarHotel.git
+cd StarHotel
+```
 ### 2. Install Composer Dependencies
 
 Make sure you have [Composer](https://getcomposer.org/) installed. Then run:
 
 ```bash
 composer install
+```
 ### 3. Set Up Environment File
 
 Copy the example environment file and generate an application key:
@@ -47,17 +49,19 @@ Copy the example environment file and generate an application key:
 ```bash
 cp .env.example .env
 php artisan key:generate
+
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=your_database_name
 DB_USERNAME=your_database_user
 DB_PASSWORD=your_database_password
-
+```
 ### 4. Run Migrations
 
 ```bash
 php artisan migrate
+```
 ### 5. Start the Laravel Development Server
 ```bash
 php artisan serve
